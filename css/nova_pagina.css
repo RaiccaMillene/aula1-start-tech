@@ -1,36 +1,39 @@
- main{
-        position: relative;
-        width: 90%;
-        height: 700px;
-        background-color: #c5dbf2;
-        margin: auto;
+ body{
+    background-color:#bddcf4;
+ }
+  main{
+    position: relative;
+    width: 90%;
+    height: 700px;
+    background-color: #bddcf4;
+    margin: auto;
 }
 
 #cabecalho{
-      position: relative;
-      width: 90%;
-      height: 50px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
-
 #meio{
     position: relative;
     width: 100%;
     height: 550px;
-    background-color: brown;   
 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
 #rodape{
     position: relative;
     width: 100%;
-    height: 50px;
-       
+    height: 100px;
+    background-color: #36f736;
 }
-
 #menu{
     position: relative;
     width: 35%;
@@ -43,57 +46,10 @@
     padding-bottom: 20px;
 }
 #menu a{
-     font-size: 12px;
-     color: darkcyan;
-     text-decoration: none;
-     font-family: Arial;
-     font-weight: bold;
-}
-
-#menu_direito{
-    position: relative;
-    width: 45%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-
-.link1{
-    width: 100px;
-    height: 50px;
-
-}
-
-.link2{
-   border: 1px solid #333;
-   text-align: center;
-   font-size: 12px;
-   color: #666;
-   text-decoration: none;
-   font-family: Arial;
-   width: 100px;
-   height: auto;
-   padding-top: 20px;
-   padding-bottom: 20px;
-   font-weight: bold;
-}
-
-.link3{
-    text-align: center;
     font-size: 12px;
-    color: #fff;
+    color: #666;
     text-decoration: none;
     font-family: Arial;
-    width: 200px;
-    height: auto;
-    background-color: #13615e;
-    padding-top: 20px;
-    padding-bottom: 20px;
     font-weight: bold;
 }
 #logo{
@@ -102,6 +58,218 @@
     height: 50px;
     text-align: center;
 }
+#menu_direito{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 45%;
+    height: 50px;
+}
+#menu_direito img{
+    width: 100px;
+    height: 50px;
+    float: left;
+}
+.link1{
+    width: 100px;
+    height: 50px;
+    float: left;
+}
+.link2{
+    border: 1px solid #333;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+    font-family: arial;
+    width: 100px;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.link3, .link4{
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    font-family: arial;
+    width: 200px;
+    height: auto;
+    float: left;
+    background-color: #13615e;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.link4{
+    width: 150px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#lado_esquerdo{
+position: relative;
+width: 50%;
+height: 400px;
+
+}
+#lado_direito{
+position: relative;
+width: 50%;
+height: 400px;
+}
+
+#big_mood{
+    position: relative;
+    width: 85%;
+    height: 280px;
+    background-color: #ffe4e1;
+    border-radius: 3%;
+    border: 1px solid;
+    padding: 1%;
+}
+
+#topo{
+    position:relative;
+    width: 100%;
+    height: auto;
+}
+
+#shopping_cart{
+    position: absolute;
+    width: 42%;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 5%;
+    border: 2px solid;
+    top: 150px;
+    left: 260px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+#shopping_cart p{
+   width: 96%;
+   background-color: #f8f8ff;
+   padding: 1%;
+   border-bottom: 2px solid;
+}
+
+#figura_cart{
+    position: relative;
+    width: 96%;
+    height: auto;
+    background-color: #f8f8ff;
+}
 
 
+#figura_cart img{
+    width: 100%;
+    height: 100%;
+}
 
+#checkout{
+    position: relative; 
+    width: 70%;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #13615e;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+    border-radius: 8%;
+}
+
+#titulo_meio{
+    color: #666;
+    height: 160px;
+    font-size: 55px;
+}
+#lado_esquerdo p{
+    font-family: verdana;
+    font-size: 20px;
+    color: #999;
+    height: 100px;
+}
+
+.direita{
+    float: right;
+}
+
+#big_mood h3{
+      text-align: center;
+      width: 100%;
+      height: auto;
+      color: #f17467;
+}
+
+/*---------------MODAL--------------------------------------*/
+.janela_escura{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(70,50,50,70%);
+    visibility: hidden;
+}
+
+.modal{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 450px;
+    background-color: #ffffff;
+    text-align: center;
+    visibility: hidden;
+}
+
+.fechar{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    float: right;
+    cursor: pointer;
+    border: 1px solid;
+    color: #000;
+}
+
+form{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f7f7f7;
+    text-align: left;
+    width:380px;
+    height: 320px;
+    padding:20px;
+	border:3px solid;
+	display:flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5px; 
+}
+
+h2{
+	text-align: center;
+}
+
+input, select{
+	border:1px solid;
+	background-color: #d0ecff;
+	padding:3px;
+}
+
+.enviar{
+	width:80px;
+	padding:10px;
+	border-radius: 5px;
+	margin:auto;
+}

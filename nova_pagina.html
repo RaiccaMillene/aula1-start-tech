@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina teste usando HTML</title>
     <link rel="stylesheet" href="/css/nova_pagina.css" type="text/css"/>
+    <script src="/index.js" type = "text/javascript"> </script> 
 </head>
 <body>
     <main>
@@ -23,16 +24,75 @@
             <nav id="menu_direito">
                 <a href="#" class="link1">  <img src="images/figura4.png"></a>
                 <a href="#" class="link2"> Conectar</a>
-                <a href="#" class="link3"> Cadastre-se Gratuitamente</a>
+                <a href="#" class="link3" onclick="abrir_modal()">Cadastre-se Gratuitamente</a>  
                  
             </nav>
         </header>
 
-        <section id="meio">Meio
+        <section id="meio">
+            <section id="lado_esquerdo">
+                <h1 id="titulo_meio"> As lojas mailchimp já estão disponiveis </h1>
+                <p> Venda seus produtos diretamente aos clientes com as lojas mailchimp. 
+                    Crie uma vitrine online gratuita, compartilhe em suas redes sociais e envie campanhas de email marketing para aumentar suas vendas.</p>
+                    <a href="#" class="link4"> Saiba mais sobre </a>
+            </section>
 
-            adicionando Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eum laudantium dolorem dicta sint, quidem neque, possimus magnam facilis sit consequatur aspernatur tempora, cum impedit ullam. Eum nesciunt earum atque.
+            <section id="lado_direito">
+                <div id="big_mood"> 
+                    <div id="topo">
+                        <img src="/images/tres_pontinhos.png">
+                        <img src="/images/carrinho.png"
+                        class = "direita">
+                    </div>
+                    <h3>Big mood Spa</h3>
+                <div id="figura">
+                    <img src="/images/figura2.png">
+                    </div>
+                </div>
+                <div id="shopping_cart"> 
+                    <p>Shopping Cart</p>
+
+                    <div id="figura_cart">
+                        <img src="/images/figua3.png">
+                    </div>
+                        
+                        <div id="checkout"> Continue to Checkout </div>
+                </div>
+                    
+             </section>
         </section>
-        <footer id="rodape"> Rodapé </footer>
+        
+       
+        <div class="janela_escura"> 
+            <div class="modal"> 
+                <div class="fechar" onclick="fechar_modal()">X</div>
+                <br/>
+            </div>
+           <form>
+				<legend> <h2> Cadastre-se </h2> </legend>
+				<br />
+					<label>Digite seu nome: 
+					<input type="text" size="30" maxlength="30"  />
+					</label><br />
+					<label>Digite seu e-mail: 
+					<input type="mail" size="30" maxlength="30"  />
+					</label><br />
+					<label>Seu gênero: 
+					<select name="genero">
+						<option>masculino</option>
+						<option>feminino</option>
+						<option>outro</option>
+					</select>
+					</label><br />
+
+					<label>Digite sua senha:
+					<input type="password" size="8" />
+					</label>
+					<input type="submit" value="enviar" class="enviar" />
+				
+			</form>
+        
+        </div>
     </main>
 </body>
 </html>
